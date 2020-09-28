@@ -1,0 +1,111 @@
+<Br>
+<nav>
+
+  <a href="/">HOME</a>
+    <a href="/aboutme">About ME</a>
+    <a href="/education">Education</a>
+    <div id="indicator"></div>
+
+</nav></br>
+<div class="a" align="center">-PORTFOLIO-</div>
+
+<ul class="info">
+  {{#with myData.aboutme}}
+
+  <body class="b">
+    <div class="row">
+      <div class="col-lg-2 "></div>
+
+      <div class="col-lg-3 ColContentSetting">
+        <img class="img1" src="/2.jpg" />
+      </div>
+      <div class="col-lg-7-10 ColContentSetting">
+        <div class="container">
+          <div class="a">-INFO-</div>
+
+          <span><b> Name :</b> {{Fullname}} </span></br>
+          <span><b> Nickname :</b> {{Nickname}} </span>
+          <br>
+          <span> <b> Birthday :</b> </span>
+          <span><b> Age :</b> {{Age}} YEAR OLD </span><br>
+          <span><b> Height :</b>{{Height}} cm </span>
+          <span><b> Weight :</b> {{Weight}} kg </span><br>
+          <span><b> Blood Type:</b> {{Blood}} </span> <span><b> Gender:</b> {{Gender}} </span><br>
+          <span><b> Nationality:</b> {{Nationality}} </span> <span><b> Religion:</b> {{Religion}} </span><br>
+          <span><b>Address:</b> {{Address}} </span> <br>
+          {{/with}}
+          <div class="a">--CONTACT INFORMATION--</div>
+          {{#with myData.con}}
+
+          <span><b>Face Book :</b>{{facebook}} </span> <br>
+          <span><b>TEL :</b> {{Phone}}</span> <br>
+          <span><b>Line :</b> {{line}}</span> <br>
+          <span><b>Instagram :</b> {{ig}}</span> <br>
+          <span><b>Email :</b><a href="mailto:{{Email}}">{{Email}}</a></span> <br>
+          {{/with}}
+          <h1></h1>
+        </div>
+
+
+
+
+
+
+      </div>
+      <div class="container col-lg-6 col-lg-offset-4 m-t-0">
+        <h1 align="center" class="a">-SKILL BAR-</h1>
+        <section class="container content-section text-center">
+          <div class="row">
+            <div class="col-lg-11 col-lg-offset-1">
+              <div id="skill-bar-wrapper">
+                <div class="text-left">
+
+                  <!-- C++ -->
+                  C++<span style="float:right;">50%</span>
+                  <div class="skillbar-container clearfix" data-percent="50%">
+                    <div class="skills" style="background: white;"></div>
+                  </div>
+
+                  <!-- Fortran -->
+                  PHP<span style="float:right;">80%</span>
+                  <div class="skillbar-container clearfix" data-percent="80%">
+                    <div class="skills" style="background: white;"></div>
+                  </div>
+
+                  <!-- Java -->
+                  Java<span style="float:right;">45%</span>
+                  <div class="skillbar-container clearfix" data-percent="45%">
+                    <div class="skills" style="background: white;"></div>
+                  </div>
+
+
+                  <!-- HTML -->
+                  HTML<span style="float:right;">80%</span>
+                  <div class="skillbar-container clearfix" data-percent="80%">
+                    <div class="skills" style="background: white;"></div>
+                  </div>
+
+                  <!-- JavaScript -->
+                  JavaScript<span style="float:right;">45%</span>
+                  <div class="skillbar-container clearfix" data-percent="45%">
+                    <div class="skills" style="background: white;"></div>
+                  </div>
+
+                  <!-- jQuery -->
+                  jQuery<span style="float:right;">50%</span>
+                  <div class="skillbar-container clearfix" data-percent="50%">
+                    <div class="skills" style="background: white;"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+
+
+
+</ul>

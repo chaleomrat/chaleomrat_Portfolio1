@@ -1,0 +1,269 @@
+.b {
+  background: black;
+  color: white;
+  margin: 50px;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Fira Mono", monospace;
+}
+span {
+  font-size: 15px;
+}
+.img1 {
+  margin-top: 0px;
+  width: 100%;
+  height: 95%;
+}
+.img2 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  width: 68%;
+  height: 80%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400");
+
+.a {
+  font-size: 50px;
+
+  font-family: "Fira Mono", monospace;
+  letter-spacing: -7px;
+  animation: glitch 1s linear infinite;
+}
+.x {
+  font-size: 250px;
+
+  font-family: "Fira Mono", monospace;
+  letter-spacing: -7px;
+  animation: glitch 1s linear infinite;
+}
+.Y {
+  font-size: 150px;
+
+  font-family: "Fira Mono", monospace;
+  letter-spacing: -7px;
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+.a:before,
+.a:after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.a:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+.a:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+}
+
+.container {
+  border: solid;
+  margin-bottom: 20px;
+  background-color: black;
+}
+
+/*skill */
+body {
+  color: #fff;
+  background-color: #000;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 25px;
+  line-height: 1.5;
+}
+
+/* #skill-bar-wrapper {
+      font-size: 18px;
+  } */
+
+.skillbar-container {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #666463;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 35px;
+  height: 5px;
+}
+
+.skills {
+  height: 35px;
+  height: 5px;
+  width: 0px;
+}
+nav {
+  position: absolute;
+  margin-top: 10px;
+  right: 0;
+  left: 0;
+  width: 319px;
+  display: table;
+  margin: 0 auto;
+  transform: translateY(-50%);
+}
+
+nav a {
+  position: relative;
+  width: 33.333%;
+  display: table-cell;
+  text-align: center;
+  color: #949494;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: 0.2s ease color;
+}
+
+nav a:before,
+nav a:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.2s ease transform;
+}
+
+nav a:before {
+  top: 0;
+  left: 10px;
+  width: 6px;
+  height: 6px;
+}
+
+nav a:after {
+  top: 5px;
+  left: 18px;
+  width: 4px;
+  height: 4px;
+}
+
+nav a:nth-child(1):before {
+  background-color: yellow;
+}
+
+nav a:nth-child(1):after {
+  background-color: red;
+}
+
+nav a:nth-child(2):before {
+  background-color: #00e2ff;
+}
+
+nav a:nth-child(2):after {
+  background-color: #89ff00;
+}
+
+nav a:nth-child(3):before {
+  background-color: purple;
+}
+
+nav a:nth-child(3):after {
+  background-color: palevioletred;
+}
+
+#indicator {
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.2s ease left;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+nav a:hover:before,
+nav a:hover:after {
+  transform: scale(1);
+}
+
+nav a:nth-child(1):hover ~ #indicator {
+  background: linear-gradient(130deg, yellow, red);
+}
+
+nav a:nth-child(2):hover ~ #indicator {
+  left: 34%;
+  background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+nav a:nth-child(3):hover ~ #indicator {
+  left: 70%;
+  background: linear-gradient(130deg, purple, palevioletred);
+}
+
+nav a:nth-child(4):hover ~ #indicator {
+  left: 90%;
+  background: linear-gradient(130deg, purple, palevioletred);
+}
+x {
+  font-size: 250px;
+  float: center;
+}
