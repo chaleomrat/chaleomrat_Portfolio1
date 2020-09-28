@@ -34,14 +34,14 @@ span {
   animation: glitch 1s linear infinite;
 }
 .x {
-  font-size: 250px;
+  font-size: 200px;
 
   font-family: "Fira Mono", monospace;
   letter-spacing: -7px;
   animation: glitch 1s linear infinite;
 }
 .Y {
-  font-size: 150px;
+  font-size: 100px;
 
   font-family: "Fira Mono", monospace;
   letter-spacing: -7px;
